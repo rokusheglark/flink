@@ -93,6 +93,11 @@ public class JoinCancelingITCase extends CancelingTestBase {
         executeTask(new StuckInOpenMatcher<Integer>(), false);
     }
 
+    @Test
+    public void testCancelSortStuckInOpenMatcher() throws Exception {
+        executeTask(new StuckInOpenMatcher<Integer>(), false);
+    }
+
     private void executeTaskWithGenerator(
             JoinFunction<
                             Tuple2<Integer, Integer>,
